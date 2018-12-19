@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod                                            # Kubernetes Resource type
+metadata:
+  name: demo-pod                                     # Pod Name
+spec:                                                
+  containers:
+    - image: Docker-Image                            # Container Image for run in pod
+      name: demo-image                               #  Port No on which container Listening
+      ports:
+        - containerPort: 4000      
